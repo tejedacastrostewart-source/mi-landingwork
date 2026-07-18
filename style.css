@@ -1,112 +1,143 @@
 /* =========================================
-   ESTILOS PULIDOS NEO-BRUTALISTAS
-   Inspirado en Land-book.com
+   ESTILOS PREMIUM PARA LANDING DE CONVERSIÓN
    ========================================= */
 
-/* Limpieza base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* 1. Fuente y Fondo Principal */
 body {
-    /* Usamos 'Inter' o Arial Black para ese look de imprenta grueso */
-    font-family: 'Arial Black', 'Helvetica Neue', sans-serif;
-    background-color: #FDF6E3; /* Crema más suave y profesional de la referencia */
-    color: #000000;
+    font-family: 'Arial Black', sans-serif;
+    background-color: #0d0d0d; /* Fondo oscuro premium */
+    color: #ffffff;
     display: flex;
     justify-content: center;
-    padding: 20px;
-    padding-top: 40px; /* Espacio arriba en móviles */
+    padding: 0;
 }
 
-/* Contenedor principal ajustado */
 .container {
-    max-width: 400px; /* Perfecto para móviles */
+    max-width: 480px; /* Ancho ideal tipo formato vertical de TikTok */
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    background-color: #141414;
+    min-height: 100vh;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.8);
 }
 
-/* 2. El Efecto de Tarjeta Neo-Brutalista (Clave) */
-.card {
-    background-color: #FFFFFF;
-    border: 3px solid #000000; /* Borde grueso y negro */
-    /* Sombra sólida y desplazada, NO difuminada */
-    box-shadow: 8px 8px 0px #000000; 
+/* SECCIONES DEL EMBUDO */
+section {
+    padding: 40px 25px;
+    border-bottom: 2px solid #222;
+}
+
+/* Cabecera Brutalista Oscura */
+.hero-card {
+    background: #000000;
+    border: 3px solid #ff5500;
     padding: 25px;
-    margin-bottom: 30px; /* Espacio entre bloques */
-    transition: all 0.2s ease;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 6px 6px 0px #ff5500;
 }
 
-/* Pequeño tag de categoría superior */
 .tagline {
-    font-family: 'Arial', sans-serif; /* Fuente normal para contraste */
-    font-size: 0.75rem;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.8rem;
     letter-spacing: 3px;
-    color: #555;
+    color: #ff5500;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
-/* 3. Títulos Masivos y Agresivos */
 .hero-title {
-    font-size: 3rem; /* ¡GRANDE! */
+    font-size: 2.8rem;
+    line-height: 0.9;
     text-transform: uppercase;
-    line-height: 0.85; /* Letras casi pegadas verticalmente */
-    letter-spacing: -2px; /* Letras pegadas horizontalmente */
-    margin-bottom: 5px;
 }
 
-/* 4. La Barra de Alerta Neón */
-.alert-bar {
-    background-color: #FF5500; /* Naranja Neón vibrante */
-    color: #FFFFFF;
-    border: 3px solid #000000;
-    box-shadow: 8px 8px 0px #000000;
+/* Sección "¿Para quién es esto?" */
+.qualifier-section h2 {
+    font-size: 1.8rem;
+    color: #ff5500;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.qualifier-list {
+    list-style: none;
+}
+
+.qualifier-item {
+    font-family: 'Arial', sans-serif;
+    background: #1c1c1c;
+    border-left: 4px solid #ff5500;
     padding: 15px;
-    text-align: center;
-    font-weight: 900;
-    text-transform: uppercase;
+    margin-bottom: 12px;
     font-size: 1rem;
-    letter-spacing: 1px;
-    margin-bottom: 35px;
+    line-height: 1.4;
 }
 
-/* Subtítulos legibles */
-.subtitle {
-    font-family: 'Arial', sans-serif; /* Arial normal para lectura larga */
-    font-size: 1.15rem;
-    line-height: 1.5;
-    color: #1a1a1a;
-    font-weight: 500;
-}
-
-/* 5. El Botón de Acción Definitivo */
-.btn-whatsapp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #00FF66; /* Verde Neón Brutalista */
-    color: #000000;
+/* CONTENEDOR DE VIDEO MULTIMEDIA */
+.video-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
     text-align: center;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 177.77%; /* Formato 16:9 Vertical (estilo TikTok/Reels) */
+    height: 0;
+    border: 3px solid #ffffff;
+    box-shadow: 6px 6px 0px #ffffff;
+    background: #000;
+    margin-bottom: 25px;
+}
+
+.video-container iframe, 
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* SECCIÓN FINAL DE ADQUISICIÓN */
+.offer-section {
+    background: #000000;
+    text-align: center;
+    padding: 50px 25px;
+}
+
+.offer-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.btn-cta {
+    display: block;
+    background-color: #00ff66; /* Verde neón de acción */
+    color: #000000;
     text-decoration: none;
     font-size: 1.4rem;
     font-weight: 900;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 22px;
     border: 3px solid #000000;
-    box-shadow: 10px 10px 0px #000000; /* Sombra más grande para el botón */
-    margin-top: 20px;
-    margin-bottom: 50px; /* Espacio al final de la página */
+    box-shadow: 8px 8px 0px #ffffff;
     transition: all 0.1s ease;
 }
 
-/* Efecto de 'presionado' del botón */
-.btn-whatsapp:active {
-    transform: translate(4px, 4px); /* Se mueve hacia la sombra */
-    box-shadow: 6px 6px 0px #000000; /* La sombra se achica */
+.btn-cta:active {
+    transform: translate(4px, 4px);
+    box-shadow: 4px 4px 0px #ffffff;
 }
