@@ -1,5 +1,5 @@
 /* =========================================
-   ESTILOS PREMIUM PARA LANDING DE CONVERSIÓN
+   LANDING PAGE COMPLETA Y CINEMATOGRÁFICA
    ========================================= */
 
 * {
@@ -9,135 +9,53 @@
 }
 
 body {
-    font-family: 'Arial Black', sans-serif;
-    background-color: #0d0d0d; /* Fondo oscuro premium */
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    padding: 0;
+    font-family: 'Arial Black', Impact, sans-serif;
+    background-color: #F4F1EA; /* El crema limpio y estético de tu referencia */
+    color: #111111;
+    overflow-x: hidden;
 }
 
-.container {
-    max-width: 480px; /* Ancho ideal tipo formato vertical de TikTok */
+/* Contenedor completo sin límites estrechos */
+.main-wrapper {
     width: 100%;
-    background-color: #141414;
-    min-height: 100vh;
-    box-shadow: 0px 0px 30px rgba(0,0,0,0.8);
 }
 
-/* SECCIONES DEL EMBUDO */
-section {
-    padding: 40px 25px;
-    border-bottom: 2px solid #222;
-}
-
-/* Cabecera Brutalista Oscura */
-.hero-card {
-    background: #000000;
-    border: 3px solid #ff5500;
-    padding: 25px;
+/* SECCIÓN 1: HERO & VIDEO GIGANTE (BLANCO Y NEGRO) */
+.hero-section {
+    width: 100%;
+    min-height: 90vh;
+    background-color: #000000; /* Fondo negro para que el video resalte */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
     text-align: center;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    box-shadow: 6px 6px 0px #ff5500;
+    position: relative;
+}
+
+.hero-headers {
+    max-width: 1000px;
+    margin-bottom: 40px;
+    z-index: 2;
 }
 
 .tagline {
-    font-family: 'Arial', sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 3px;
-    color: #ff5500;
-    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    color: #FF5500;
     font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
 }
 
 .hero-title {
-    font-size: 2.8rem;
+    font-size: 5.5rem; /* Título gigante */
+    color: #FFFFFF;
     line-height: 0.9;
     text-transform: uppercase;
+    letter-spacing: -3px;
 }
 
-/* Sección "¿Para quién es esto?" */
-.qualifier-section h2 {
-    font-size: 1.8rem;
-    color: #ff5500;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-.qualifier-list {
-    list-style: none;
-}
-
-.qualifier-item {
-    font-family: 'Arial', sans-serif;
-    background: #1c1c1c;
-    border-left: 4px solid #ff5500;
-    padding: 15px;
-    margin-bottom: 12px;
-    font-size: 1rem;
-    line-height: 1.4;
-}
-
-/* CONTENEDOR DE VIDEO MULTIMEDIA */
-.video-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.video-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 177.77%; /* Formato 16:9 Vertical (estilo TikTok/Reels) */
-    height: 0;
-    border: 3px solid #ffffff;
-    box-shadow: 6px 6px 0px #ffffff;
-    background: #000;
-    margin-bottom: 25px;
-}
-
-.video-container iframe, 
-.video-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* SECCIÓN FINAL DE ADQUISICIÓN */
-.offer-section {
-    background: #000000;
-    text-align: center;
-    padding: 50px 25px;
-}
-
-.offer-text {
-    font-family: 'Arial', sans-serif;
-    font-size: 1.1rem;
-    line-height: 1.5;
-    margin-bottom: 30px;
-    color: #ccc;
-}
-
-.btn-cta {
-    display: block;
-    background-color: #00ff66; /* Verde neón de acción */
-    color: #000000;
-    text-decoration: none;
-    font-size: 1.4rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    padding: 22px;
-    border: 3px solid #000000;
-    box-shadow: 8px 8px 0px #ffffff;
-    transition: all 0.1s ease;
-}
-
-.btn-cta:active {
-    transform: translate(4px, 4px);
-    box-shadow: 4px 4px 0px #ffffff;
-}
+/*
