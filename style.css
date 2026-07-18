@@ -1,0 +1,88 @@
+/* ESTILOS BASE BRUTALISTAS */
+body {
+    font-family: 'Arial Black', Impact, sans-serif;
+    background-color: #e6dfd3; /* Color crema de fondo de tu referencia */
+    color: #121212;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 420px;
+    width: 100%;
+}
+
+/* BLOQUES CON BORDES GRUESOS Y MARCADOS */
+.card {
+    background: #ffffff;
+    border: 3px solid #121212;
+    box-shadow: 5px 5px 0px #121212; /* Sombra sólida sin difuminar */
+    margin-bottom: 25px;
+    padding: 20px;
+    text-align: left;
+}
+
+.tagline {
+    font-size: 0.8rem; 
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+}
+
+/* SECCIÓN HERO (TÍTULO GIGANTE) */
+.hero-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    line-height: 0.9;
+    letter-spacing: -1px;
+    margin: 10px 0;
+    word-wrap: break-word;
+}
+
+/* BLOQUE DE ALERTA NARANJA */
+.alert-bar {
+    background-color: #ff5500; /* Naranja tech vibrante */
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border: 3px solid #121212;
+    box-shadow: 5px 5px 0px #121212;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    color: #222;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* BOTÓN DE WHATSAPP BRUTALISTA */
+.btn-whatsapp {
+    display: block;
+    background-color: #00ff66; /* Verde neón llamativo */
+    color: #121212;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 18px;
+    border: 3px solid #121212;
+    box-shadow: 6px 6px 0px #121212;
+    margin: 30px 0;
+    transition: all 0.1s ease;
+}
+
+.btn-whatsapp:active {
+    transform: translate(3px, 3px);
+    box-shadow: 3px 3px 0px #121212;
+}
